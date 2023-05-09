@@ -8,7 +8,7 @@ model = SamModel.from_pretrained("facebook/sam-vit-huge").to(device)
 processor = SamProcessor.from_pretrained("facebook/sam-vit-huge")
 
 img = Image.open("ZeynepEmre_SacreCoeur.png")
-img.show()
+#img.show()
 #img_url = "https://huggingface.co/ybelkada/segment-anything/resolve/main/assets/car.png"
 raw_image = Image.open(requests.get(img, stream=True).raw).convert("RGB")
 input_points = [[[450, 600]]]  # 2D location of a window in the image
